@@ -27,7 +27,7 @@ sys.path.insert(1, THIS_REPO + "/mod/")
 * plot-scatter.py
 
 ```
-ipython --pylab
+$ ipython --pylab
 ```
 
 ### Embedding ipython
@@ -47,6 +47,6 @@ Sample usage of simple.py
 -------------------------
 
 ```
-curl http://www.google.sk/ 2>/dev/null | xargs -0 python simple.py
+$ curl http://www.jakpsatweb.cz/ 2>/dev/null | xargs -0 python simple.py
 ```
 
