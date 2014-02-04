@@ -15,8 +15,10 @@ Files
 
 * mod/
 
-> from IPython.lib.deepreload import reload
-> sys.path.insert(1, THIS_REPO + "/mod/")
+```python
+from IPython.lib.deepreload import reload
+sys.path.insert(1, THIS_REPO + "/mod/")
+```
 
 ### Plotting
 
@@ -24,7 +26,9 @@ Files
 * plot-imshow.py
 * plot-scatter.py
 
-> ipython --pylab
+```
+ipython --pylab
+```
 
 ### Embedding ipython
 
@@ -42,5 +46,7 @@ Files
 Sample usage of simple.py
 -------------------------
 
-> curl http://www.google.sk/ 2>/dev/null | xargs -0 python simple.py
+```
+curl http://www.google.sk/ 2>/dev/null | xargs -0 python simple.py
+```
 
