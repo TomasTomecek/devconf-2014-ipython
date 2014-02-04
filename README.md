@@ -32,7 +32,7 @@ $ ipython --pylab
 
 ### Embedding ipython
 
-* run_ipy.py
+* embed.py
 
 ### A little bit more complex sample
 
