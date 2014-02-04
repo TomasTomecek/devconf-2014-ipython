@@ -44,20 +44,20 @@ def fetch_tags():
         return tags_found
     global TEXT
     global TAGS
-    tags_found = find_tags(TEXT)
-    for tag in tags_found:
-        TAGS = find_tags(TEXT)
-        for t in TAGS:
-            t.children = _find_tags(t)
+    TAGS = find_tags(TEXT)
+    for tag in TAGS:
+        tag.children = _find_tags(tag)
 
 def display_tags():
     global TAGS
-    
+
     def _display_tag(tag, level):
-        print "%s%s (%s)" % (" " * level, tag.tag, tag.content)
         if tag.children:
+            print "%s%s" % (" " * level, tag.tag)
             for child in tag.children:
                 _display_tag(child, level+4)
+        else:
+            print "%s%s (%s)" % (" " * level, tag.tag, tag.content)
     level = 0
     for tag in TAGS:
         _display_tag(tag, level)
