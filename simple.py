@@ -1,16 +1,25 @@
 import re
 import sys
 
+"""
+Basic sample for ipython demonstration.
+
+It recusively parses XML document and prints its tree structure to standard output.
+Content of document is accepted via first argument:
+    $ simple.py <a><b>asd</b><c><d>qwe</d></c></a>
+"""
+
 try:
     TEXT = sys.argv[1]
 except IndexError:
-    TEXT = "Here is some <em>HTML</em> markup. Another <b>element</b>"
+    TEXT = "Here is some <em>HTML</em> markup. Another <b>element</b>."
 else:
     TEXT = TEXT.replace('\n', '').replace('\r', '')
 
-TAG_RE = re.compile(r"<(?P<tag>[a-zA-Z0-9]+?)\w?.*?>(?P<content>.*?)</(?P=tag)>")
+TAG_RE = re.compile(r"<(?P<tag>[a-zA-Z0-9]+?).*?>(?P<content>.*?)</(?P=tag)>")
 
 class Tag(object):
+    """ recursive class that repsents elements """
     def __init__(self, tag, content=""):
         self.tag = tag
         self.content = content
@@ -28,7 +37,7 @@ class Tag(object):
 TAGS = []
 
 def find_tags(text):
-    "return list of found tags"
+    """ return list of found tags"""
     match = TAG_RE.findall(text)
     found = []
     if match:
@@ -37,6 +46,7 @@ def find_tags(text):
     return found
 
 def fetch_tags():
+    """ Recusively traverse through XML document and collect elements """
     def _find_tags(tag):
         tags_found = find_tags(tag.content)
         for tf in tags_found:
@@ -49,6 +59,9 @@ def fetch_tags():
         tag.children = _find_tags(tag)
 
 def display_tags():
+    """
+    Print document's tree structure to standard output.
+    """
     global TAGS
 
     def _display_tag(tag, level):
