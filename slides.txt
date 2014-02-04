@@ -1,0 +1,52 @@
+DEVCONF IPYTHON TALK
+====================
+
+* difference between `$ python` and `$ ipython`
+
+* ipython features
+
+* ipython.conf
+
+* ipdb
+
+IPYTHON FEATURES
+================
+
+ * IMPORTANT
+
+  * code introspection
+    * ? ??
+  * completion
+  * optimisation
+    * %prun
+      * profiler
+      * run simple.py)
+    * %timeit
+      * a = {} vs a = dict()
+      * a = range(1000) vs a = xrange(1000)
+  * system shell
+    * !
+    * files = !ls
+    * !ls $python_var
+
+MAGICS
+======
+
+ * %run
+ * %debug
+ * %pdb
+ * %aimport
+ * %who, %whos
+
+OTHER FEATURES
+==============
+
+  * plotting
+    * ipython --pylab
+      * x = randn(10000)
+      * hist(x, 100)
+  * ipython notebook
+    * %matplotlib
+      from pylab import *
+      x = randn(10000)
+      hist(x, 100)
