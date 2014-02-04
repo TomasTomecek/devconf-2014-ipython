@@ -38,17 +38,14 @@ $ ipython --pylab
 
 * simple.py
 
+```
+$ curl http://www.jakpsatweb.cz/ 2>/dev/null | xargs -0 python simple.py
+```
+
 ### Guide to presenter
 
 * slides.txt
 
-
-Sample usage of simple.py
--------------------------
-
-```
-$ curl http://www.jakpsatweb.cz/ 2>/dev/null | xargs -0 python simple.py
-```
 
 Reference
 =========
