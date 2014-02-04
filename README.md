@@ -50,6 +50,6 @@ $ curl http://www.jakpsatweb.cz/ 2>/dev/null | xargs -0 python simple.py
 Reference
 =========
 
-[1]: http://www.loria.fr/~rougier/teaching/matplotlib/        "Plots"
-[2]: http://ipython.org/ipython-doc/dev/                      "Official Documentation"
+[Plots](http://www.loria.fr/~rougier/teaching/matplotlib/)
+[Official Documentation](http://ipython.org/ipython-doc/dev/)
 
