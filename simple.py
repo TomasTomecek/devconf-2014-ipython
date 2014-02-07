@@ -20,7 +20,7 @@ else:
 TAG_RE = re.compile(r"<(?P<tag>[a-zA-Z0-9]+?).*?>(?P<content>.*?)</(?P=tag)>")
 
 class Tag(object):
-    """ recursive class that repsents elements """
+    """ recursive class that represents elements """
     def __init__(self, tag, content=""):
         self.tag = tag
         self.content = content
