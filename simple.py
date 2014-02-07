@@ -69,7 +69,7 @@ def display_tags():
         if tag.children:
             print "%s%s" % (" " * level, tag.tag)
             for child in tag.children:
-                _display_tag(child, level+4)
+                _display_tag(tag, level+4)
         else:
             print "%s%s (%s)" % (" " * level, tag.tag, tag.content)
     level = 0
