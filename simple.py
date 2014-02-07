@@ -1,6 +1,4 @@
-import re
-import sys
-
+#!/usr/bin/python
 """
 Basic sample for ipython demonstration.
 
@@ -8,6 +6,9 @@ It recusively parses XML document and prints its tree structure to standard outp
 Content of document is accepted via first argument:
     $ simple.py <a><b>asd</b><c><d>qwe</d></c></a>
 """
+
+import re
+import sys
 
 try:
     TEXT = sys.argv[1]
