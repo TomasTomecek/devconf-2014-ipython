@@ -44,7 +44,7 @@ def find_tags(text):
     if match:
         for tag, content in match:
             found.append(Tag(tag, content))
-    return found
+        return found
 
 def fetch_tags():
     """ Recusively traverse through XML document and collect elements """
