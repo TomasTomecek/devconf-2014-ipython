@@ -51,5 +51,6 @@ Reference
 =========
 
 [Plots](http://www.loria.fr/~rougier/teaching/matplotlib/)
+
 [Official Documentation](http://ipython.org/ipython-doc/dev/)
 
