@@ -1,13 +1,17 @@
 DEVCONF IPYTHON TALK
 ====================
 
-* difference between `$ python` and `$ ipython`
+ * difference between `$ python` and `$ ipython`
 
-* ipython features
+ * ipython 2.0 -- https://github.com/ipython/ipython.git
 
-* ipython.conf
+ * ipython features
 
-* ipdb
+ * ipython.conf
+   * ipython profile create [profilename]
+   * mv ~/.ipython/profile_default/ipython_config.py{,_}
+   
+ * ipdb
 
 IPYTHON FEATURES
 ================
