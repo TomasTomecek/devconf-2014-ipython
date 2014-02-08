@@ -11,8 +11,7 @@ Files
 * init.ipy
 * ipython_config.py
 
-substitue `ipython_config.py` for your configuration file in your profile
-
+substitue `ipython_config.py` for your configuration file in your profile<br>
 put `init.ipy` in your `ipython locate` directory
 
 ### Sample for recursive reloading
@@ -54,7 +53,6 @@ $ curl http://www.jakpsatweb.cz/ 2>/dev/null | xargs -0 python simple.py
 Reference
 =========
 
-[Plots](http://www.loria.fr/~rougier/teaching/matplotlib/)
-
+[Plots](http://www.loria.fr/~rougier/teaching/matplotlib/)<br>
 [Official Documentation](http://ipython.org/ipython-doc/dev/)
 
