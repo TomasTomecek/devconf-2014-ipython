@@ -11,6 +11,10 @@ Files
 * init.ipy
 * ipython_config.py
 
+substitue `ipython_config.py` for your configuration file in your profile
+
+put `init.ipy` in your `ipython locate` directory
+
 ### Sample for recursive reloading
 
 * mod/
